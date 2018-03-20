@@ -1,0 +1,51 @@
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Oswald;
+}
+
+h1 {
+  border-bottom: 2px solid #f1f1f1;
+  font-size: 25px;
+  margin-left: 1.66%;
+  padding-bottom: 10px;
+  width: 30%;
+}
+
+div.imageContainer {
+  align-items: center;
+  display: flex;
+  float:left;
+  justify-content: space-around;
+  margin: 1.66%;
+  max-height: 50vh;
+  max-width: 30%;
+  overflow: hidden;
+}
+
+div.imageContainer:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+
+  h1 {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  div.imageContainer {
+    align-items: center;
+    display: flex;
+    float:left;
+    justify-content: space-around;
+    margin: 15px 5% 15px 5%;
+    max-height: 50vh;
+    max-width: 90%;
+    width: 90%;
+    overflow: hidden;
+  }
+}
