@@ -1,5 +1,8 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 
 app.get("/", function(req, res){
@@ -13,6 +16,10 @@ app.get('/courses', function (req, res) {
     {name: "Sanctuary Golf Course", image: "http://coloradowomensgolf.org/wp-content/uploads/Sanctuary600-001.jpg", url: "https://sanctuarygolfcourse.com/"},
   ];
   res.render("courses", {courses: courses});
+});
+
+app.get('/courses/new', function (req, res) {
+  res.render("new.ejs");
 });
 
 app.post('/courses', function (req, res) {

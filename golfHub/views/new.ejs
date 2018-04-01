@@ -1,0 +1,9 @@
+<% include partials/header %>
+<h1>Create a new GolfHub course!</h1>
+
+<form action="/courses" method="post">
+  <input type="text" name="name" placeholder="name">
+  <input type="text" name="image" placeholder="image url">
+  <button>Submit New Course</button>
+</form>
+<% include partials/footer %>
