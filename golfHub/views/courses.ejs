@@ -1,10 +1,14 @@
 <% include partials/header %>
+
+
+
+
   <div class="container">
     <header class="jumbotron">
       <div class="container">
         <h1>Welcome to GolfHub</h1>
         <p>View our hand-picked golf courses from all over the world!</p>
-        <p><a class="btn btn-primary btn-lrg" href="/courses/new">Add New Course</a></p>
+        <p><a class="btn btn-success btn-lrg" href="/courses/new">Add New Course</a></p>
       </div>
     </header>
 
@@ -12,16 +16,19 @@
       <% courses.forEach(function(course){ %>
         <div class="col-md-3 col-sm-6">
           <div class="thumbnail">
-            <img src="<%= course.image %>">
+            <img style="width: 100%; overflow: hidden;" src="<%= course.image %>">
             <div class="caption">
               <h4><%= course.name %></h4>
-                <a href="<%= course.url %>">Website</a>
+              <p>
+                <%= course.location %>
+              </p>
+              <p><a href="<%= course.url %>" class="btn btn-success" role="button">Website</a></p>
             </div>
           </div>
-          </div>
+        </div>
         <% }); %>
+          <a  class="btn btn-success btn-lg center-block" href="/">Home</a>
     </div>
 
-        <a href="/">Home</a>
   </div>
   <% include partials/footer %>
