@@ -13,6 +13,9 @@ var courses = [
   {name: "Arrowhead Golf Club", image: "http://www.eighteenunderpar.com/wp-content/uploads/2014/09/arrowhead-2.jpg", url: "http://www.arrowheadcolorado.com/"},
   {name: "Castle Pines Golf Club", image: "http://www.nicklaus.com/design/assets/images/castlepines/gallery/6.jpg", url: "https://www.castlepinesgolfclub.club/"},
   {name: "Sanctuary Golf Course", image: "http://coloradowomensgolf.org/wp-content/uploads/Sanctuary600-001.jpg", url: "https://sanctuarygolfcourse.com/"},
+  {name: "The Pinery Country Club", image: "https://www.thepinerycc.com/sites/www.thepinerycc.com/files/styles/content_blocks/public/_BCM2713-cloud_0.jpg?itok=V55ks61k", url: "https://www.thepinerycc.com/#"},
+  {name: "Cherry Hills Country Club", image: "https://www.chcc.com/documents/10184/18455/course-17.jpg", url: "https://www.chcc.com/"},
+  {name: "Ballyneal Golf Club", image: "https://www.ballyneal.com/wp-content/uploads/2015/01/new-hole-12-c.jpg", url: "https://www.ballyneal.com/"},
 ];
 
 app.get('/courses', function (req, res) {
