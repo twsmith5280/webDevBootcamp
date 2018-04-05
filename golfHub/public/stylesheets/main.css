@@ -27,10 +27,25 @@ h4 {
 
 .btn-primary {
   background-color: rgb(203, 0, 50);
+  border-color: black;
 }
 
 .jumbotron {
   background-color: rgb(250, 244, 0);
+  padding: 0 0;
+}
+
+.jumboHead {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    padding: 0;
+}
+
+.jumbotron .container {
+  padding: 5px 5px 0 5px;
 }
 
 .wrapper .image {
